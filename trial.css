@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: "poppins" sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    padding: 1 7%;
+    background-color: black;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;              /* this brings img to left and text to right*/
+}
+.special{
+    padding: 28px 0;
+}
+.special li{
+    display: inline-block;
+    margin: 0 15px;
+    
+}
+.special li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    position: relative;
+}
+.special li a::after{
+    content: '';
+    background: #ff0004;
+    color: white;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+    
+}
+.special li a:hover::after{
+   
+    width: 100%;
+}
+
+.btn{
+    color:white;
+    background: #ff0004;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    max-width: 900px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+
+}
+.content h1{
+    font-size: 65px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.content h1:hover{
+    transform: scale(1.1);
+}
+.content form{
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+}
+.content form input{
+    flex: 1;                   /* it uses the entire space  where bkcg colour is applied*/
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 20px;
+}
+.content form button{
+    background: #ff0004;
+    color:#fff;
+    size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}

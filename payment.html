@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT FORM</title>
+</head>
+<body>
+    
+   
+    <form action="">    <!--under form action location of server is mentioned-->
+        <h1> PAYMENT FORM </h1>
+        <fieldset>
+        <h2>PERSONAL INFORMATION</h2>
+        <p>NAME*: <input type="text" name="name" required></p>  <!-- here input type is text ie a textbox will appeear,name attribute is used 
+                                                     which specifies that in the server value will be stored in "name",reqired is used to sow that the field is compulsary-->
+       
+    <fieldset>
+        <legend>GENDER</legend> <!--name is given to the group-->
+        <p>
+            
+            MALE <input type="radio" name="gender" id="gender">
+            FEMALE<input type="radio" name="gender" id="gender">
+            OTHERS<input type="radio" name="gender" id="gender">
+            <!-- input type is radio ie radio button appears,name of each is same as any one of the 3 needs to be choosen-->
+       
+        </p>
+    </fieldset> <!-- fielset s used to create a field ie a box is created ie it is grouped together-->
+    <p> ADDRESS: <textarea name="address" id="" cols="80" rows="10"></textarea></p>
+    <p>EMAIL*: <input type="email" name="email" id="email" required></p>
+    <p>PINCODE <input type="number" name="pincode" id="pincode"></p>
+</fieldset>
+<fieldset>
+    <h2>PAYMENT INFORMATION</h2>
+    <p>CARD TYPE*:
+        <select name="card_type" id="card_type" required> <!-- dropdown box -->
+        <option value="">--SELECT A CARD TYPE--</option>  <!-- here value is empty as if submit is clicked value would directly be selected without the user selecting it -->
+        <option value="VISA">VISA</option>
+        <option value="RUPAY">RUPAY</option>
+        <option value="MASTERCARD">MASTERCARD</option>
+    </select>
+    </p>
+    <p>CARD NUMBER*: <input type="number" name="card_no" id="card_no" required></p>
+    <p>EXPIRATION DATE*: <input type="date" name="exp_date" id="exp_date" required></p>
+    <p>CVV*: <input type="password" name="cvv" id="cvv" required></p>
+</fieldset>
+
+<input type="submit" value="PAY NOW" >
+
+    </form>  
+</body>
+</html>
