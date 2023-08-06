@@ -1,0 +1,21 @@
+.special{                     /* dot(.) is used for class in css  */
+    color: olive;
+    background-color: orchid;
+    font-weight:bold;
+}
+span.special,em.special{
+    color: rebeccapurple;
+}
+li em{
+    color: aqua;
+}
+a{                           /*colour of link berfore visiting or hovering*/
+    color: blueviolet;
+}
+a:hover{     /*link hovering changes*/
+    color: green;          /*changes colour of text on hovering*/
+    text-decoration: none;   /* this removes underline of text when we hover on it*/
+} 
+a:visited{                 /*colour of link after being visited*/
+    color: blue;
+}

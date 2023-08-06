@@ -1,0 +1,8 @@
+#heading{               /* hashtag(#) is used or id selector in css*/
+      color: burlywood;
+      background-color: black;width: fit-content;
+}
+     
+      p#one{
+    color: blue;
+}
